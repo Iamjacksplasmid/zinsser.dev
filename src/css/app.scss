@@ -1,0 +1,153 @@
+// app global css in SCSS form
+.q-tab__label,
+.text-h1 {
+  font-family: $headline-font-family;
+  font-weight: 600;
+}
+
+.delay_0 {
+  animation-delay: 0.25s;
+  animation-duration: 1s;
+}
+.delay_1 {
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+.delay_2 {
+  animation-delay: 2.5s;
+  animation-duration: 2s;
+}
+.delay_3 {
+  animation-delay: 3s;
+  animation-duration: 2s;
+}
+.delay_4 {
+  animation-delay: 5s;
+  animation-duration: 2s;
+}
+
+.dmToggle {
+  box-shadow: 0 0 0.5rem 0.05rem;
+}
+
+.body--light {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  & .logo {
+    filter: brightness(0) !important;
+  }
+  & .dmToggle,
+  .customHeader,
+  .linkButton {
+    color: black;
+    background-color: $light-blue-5 !important;
+  }
+  & .card {
+    color: black;
+    font-weight: 600;
+  }
+}
+
+.body--dark {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  & .logo {
+    filter: brightness(100) !important;
+  }
+  & .dmToggle,
+  .customHeader,
+  .linkButton {
+    color: $yellow-1;
+    background-color: $indigo-10 !important;
+  }
+  & .card {
+    color: white !important;
+    font-weight: 600;
+  }
+}
+.card {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  width: 40%;
+}
+.slide_label {
+  position: absolute;
+  z-index: 1000;
+  top: 5%;
+  left: 5%;
+}
+iframe {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  width: 40%;
+  height: 80%;
+}
+.bg-care {
+  background: #e36f1e !important;
+}
+.bg-childrens {
+  background: #e36f1e !important;
+}
+.bg-simantel {
+  background: #e77d24 !important;
+}
+.bg-simantel {
+  background: #e36f1e !important;
+}
+
+@media (max-width: $breakpoint-xs-max) {
+  .pagewrap {
+    text-align: center !important;
+  }
+  .delay_0 .logo {
+    width: 60% !important;
+  }
+  .text-h1 {
+    font-size: 3rem !important;
+    line-height: 3rem !important;
+  }
+  .text-h2 {
+    font-size: 1.875rem !important;
+    line-height: 1.875rem !important;
+  }
+  .text-h3 {
+    font-size: 1.5rem !important;
+    line-height: 1.5625rem !important;
+  }
+  .text-h4 {
+    font-size: 1.0625rem !important;
+    line-height: 1.25rem;
+  }
+  .text-h5 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-h6 {
+    font-size: 0.625rem;
+    line-height: 1rem;
+  }
+  .text-subtitle1 {
+    font-size: 0.5rem;
+    line-height: 0.875rem;
+  }
+  .text-subtitle2 {
+    font-size: 0.4375rem;
+    line-height: 0.6875rem;
+  }
+  .text-body1 {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+  }
+  .text-body2 {
+    font-size: 0.4375rem;
+    line-height: 0.5rem;
+  }
+  .text-caption {
+    font-size: 0.375rem;
+    line-height: 0.625rem;
+  }
+  .text-overline {
+    font-size: 0.375rem;
+    line-height: 1rem;
+  }
+}
