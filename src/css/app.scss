@@ -5,6 +5,83 @@
   font-weight: 600;
 }
 
+.dmToggle {
+  box-shadow: 0 0 0.5rem 0.05rem;
+}
+
+.body--light {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  & .logo {
+    filter: brightness(0) !important;
+  }
+  & .dmToggle,
+  .q-header,
+  .q-footer,
+  .linkButton {
+    color: black;
+    background: none !important;
+  }
+  & .card {
+    color: black;
+    font-weight: 600;
+  }
+}
+
+.body--dark {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  & .logo {
+    filter: brightness(100) !important;
+  }
+  & .dmToggle,
+  .q-header,
+  .q-footer,
+  .linkButton {
+    background: none !important;
+  }
+  & .card {
+    color: white !important;
+    font-weight: 600;
+  }
+}
+
+.card {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  width: 40%;
+}
+
+.slide_label {
+  position: absolute;
+  z-index: 1000;
+  top: 5%;
+  left: 5%;
+}
+
+iframe {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  width: 40%;
+  height: 80%;
+}
+
+.bg-care {
+  background: #e36f1e !important;
+}
+.bg-childrens {
+  background: #e4002b !important;
+}
+.bg-simantel {
+  background: #e77d24 !important;
+}
+.bg-truesense {
+  background: #e36f1e !important;
+}
+.bg-specialops {
+  background: #ff0000 !important;
+}
+
 .delay_0 {
   animation-delay: 0.25s;
   animation-duration: 1s;
@@ -26,81 +103,12 @@
   animation-duration: 2s;
 }
 
-.dmToggle {
-  box-shadow: 0 0 0.5rem 0.05rem;
-}
-
-.body--light {
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  & .logo {
-    filter: brightness(0) !important;
-  }
-  & .dmToggle,
-  .customHeader,
-  .linkButton {
-    color: black;
-    background-color: white !important;
-  }
-  & .card {
-    color: black;
-    font-weight: 600;
-  }
-}
-
-.body--dark {
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  & .logo {
-    filter: brightness(100) !important;
-  }
-  & .dmToggle,
-  .customHeader,
-  .linkButton {
-    color: $yellow-1;
-    background-color: $dark-page !important;
-  }
-  & .card {
-    color: white !important;
-    font-weight: 600;
-  }
-}
-.card {
-  position: absolute;
-  bottom: 15%;
-  left: 5%;
-  width: 40%;
-}
-.slide_label {
-  position: absolute;
-  z-index: 1000;
-  top: 5%;
-  left: 5%;
-}
-iframe {
-  position: absolute;
-  bottom: 15%;
-  right: 5%;
-  width: 40%;
-  height: 80%;
-}
-.bg-care {
-  background: #e36f1e !important;
-}
-.bg-childrens {
-  background: #e36f1e !important;
-}
-.bg-simantel {
-  background: #e77d24 !important;
-}
-.bg-simantel {
-  background: #e36f1e !important;
-}
-
 @media (max-width: $breakpoint-xs-max) {
   .pagewrap {
     text-align: center !important;
   }
   .delay_0 .logo {
-    width: 60% !important;
+    width: 50% !important;
   }
   .text-h1 {
     font-size: 3rem !important;

@@ -32,6 +32,34 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+    <q-footer>
+      <q-toolbar class="row no-wrap justify-center content-around">
+        <q-btn
+          href="mailto: zinssej@gmail.com"
+          target="_blank"
+          rounded
+          outline
+          class="linkButton"
+          icon="fa-solid fa-paper-plane"
+        />
+        <q-btn
+          href="https://github.com/Iamjacksplasmid"
+          target="_blank"
+          rounded
+          outline
+          class="q-mx-md linkButton"
+          icon="fa-brands fa-github"
+        />
+        <q-btn
+          href="https://www.linkedin.com/in/joshua-zinsser/"
+          target="_blank"
+          rounded
+          outline
+          class="linkButton"
+          icon="fa-brands fa-linkedin"
+        />
+      </q-toolbar>
+    </q-footer>
   </q-layout>
 </template>
 

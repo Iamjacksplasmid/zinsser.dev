@@ -4,7 +4,7 @@
       class="pagewrap fit row wrap justify-center items-center content-center"
     >
       <div
-        class="column delay_0 animated flipInX col-xs-12 col-md-3 content-end"
+        class="q-py-xl column delay_0 animated flipInX col-xs-12 col-md-3 content-center"
       >
         <img
           alt="logo"
@@ -24,35 +24,7 @@
         <div class="delay_4 animated flipInX text-h2">
           I'm in the Web Dev game.
         </div>
-        <br />
       </div>
-    </div>
-    <div class="q-pa-lg row no-wrap justify-around content-around">
-      >
-      <q-btn
-        href="mailto: zinssej@gmail.com"
-        target="_blank"
-        rounded
-        outline
-        class="linkButton"
-        icon="fa-solid fa-paper-plane"
-      />
-      <q-btn
-        href="https://github.com/Iamjacksplasmid"
-        target="_blank"
-        rounded
-        outline
-        class="q-mx-md linkButton"
-        icon="fa-brands fa-github"
-      />
-      <q-btn
-        href="https://www.linkedin.com/in/joshua-zinsser/"
-        target="_blank"
-        rounded
-        outline
-        class="linkButton"
-        icon="fa-brands fa-linkedin"
-      />
     </div>
   </q-page>
 </template>
