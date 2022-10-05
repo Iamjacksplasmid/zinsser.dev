@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpr fFf">
-    <q-header reveal class="customHeader" height-hint="98">
+    <q-header class="customHeader" height-hint="98">
       <q-toolbar>
         <q-avatar>
           <img class="logo" src="../assets/logo-white.svg" />
@@ -21,7 +21,7 @@
         </q-tabs>
         <q-space />
         <q-btn
-          rounded
+          round
           outline
           @click="$q.dark.toggle()"
           class="dmToggle"
@@ -37,7 +37,7 @@
         <q-btn
           href="mailto: zinssej@gmail.com"
           target="_blank"
-          rounded
+          round
           outline
           class="linkButton"
           icon="fa-solid fa-paper-plane"
@@ -45,7 +45,7 @@
         <q-btn
           href="https://github.com/Iamjacksplasmid"
           target="_blank"
-          rounded
+          round
           outline
           class="q-mx-md linkButton"
           icon="fa-brands fa-github"
@@ -53,7 +53,7 @@
         <q-btn
           href="https://www.linkedin.com/in/joshua-zinsser/"
           target="_blank"
-          rounded
+          round
           outline
           class="linkButton"
           icon="fa-brands fa-linkedin"

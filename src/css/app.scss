@@ -5,6 +5,10 @@
   font-weight: 600;
 }
 
+.tall {
+  min-height: 80vh;
+}
+
 .dmToggle {
   box-shadow: 0 0 0.5rem 0.05rem;
 }
@@ -19,7 +23,7 @@
   .q-footer,
   .linkButton {
     color: black;
-    background: none !important;
+    background: whitesmoke !important;
   }
   & .card {
     color: black;
@@ -36,7 +40,7 @@
   .q-header,
   .q-footer,
   .linkButton {
-    background: none !important;
+    background: darkslategray !important;
   }
   & .card {
     color: white !important;
@@ -102,13 +106,21 @@ iframe {
   animation-delay: 5s;
   animation-duration: 2s;
 }
+.delay_5 {
+  animation-delay: 5s;
+  animation-duration: 2s;
+}
+
+.logowrap {
+  align-content: end;
+}
 
 @media (max-width: $breakpoint-xs-max) {
-  .pagewrap {
-    text-align: center !important;
+  .logowrap {
+    align-content: center;
   }
   .delay_0 .logo {
-    width: 50% !important;
+    width: 40% !important;
   }
   .text-h1 {
     font-size: 3rem !important;
